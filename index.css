@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of viewport height */
+}
+
+.mb-3 {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 70vh;
+    width: 40vw;
+}
+
+
+#label1{
+    padding-right: 55%;
+}
+#label2{
+    padding-right: 65%;
+}
+#label3{
+    padding-right: 72%;
+}
+#label4{
+    padding-right: 74%;
+}
+
+.form-select {
+    margin-bottom: 20px;
+    width: 36vw;
+    z-index: 0; 
+    border: 1px solid black;
+   
+}
+.form-control{
+    margin-bottom: 20px; 
+    width: 36vw; 
+    z-index: 0; 
+    border: 1px solid black;
+}
+#button{
+    background-color: blueviolet;
+    border-radius: 5px;
+    border-color: black;
+    width: 35vw;
+    height: 35px;
+    margin-top: 10px;
+    line-height: 17px;
+}
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 33%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.error-icon::after {
+    content: "!";
+}
